@@ -12,18 +12,21 @@ interface Props {
     onClick(): void;
 }
 
-export default function ButtonComponent({ children, type, size, onClick }: Props) {
-    const classes = useStyles();
-    return (
-        <Button
-            className={clsx({
-                [classes.primary]: type === 'primary',
-                [classes.secondary]: type === 'secondary'
-            })}
-            size={size}
-            onClick={onClick}
-        >
-            {children}
-        </Button>
-    )
+export default function ButtonComponent({
+  children, type, size, onClick,
+}: Props) {
+  const classes = useStyles();
+
+  return (
+    <Button
+      className={clsx({
+        [classes.primary]: type === 'primary',
+        [classes.secondary]: type === 'secondary',
+      })}
+      size={size}
+      onClick={onClick}
+    >
+      {children}
+    </Button>
+  );
 }
