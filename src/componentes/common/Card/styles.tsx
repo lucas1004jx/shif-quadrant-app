@@ -4,9 +4,9 @@ const useStyles = makeStyles({
   card: {
     maxWidth: 345,
   },
-  buttons:{
-    justifyContent:'flex-end'
-  }
+  buttons: {
+    justifyContent: 'flex-end',
+  },
 });
 
 export default useStyles;

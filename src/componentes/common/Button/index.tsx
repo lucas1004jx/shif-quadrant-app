@@ -1,20 +1,20 @@
-import { ReactNode } from 'react';
+import { ReactNode, FC } from 'react';
 import clsx from 'clsx';
 import Button from '@material-ui/core/Button';
 import useStyles from './styles';
 
 type Size = 'small' | 'medium' | 'large';
 
-interface Props {
-    children: ReactNode;
-    type: string;
-    size: Size;
-    onClick(): void;
-}
+type Props = {
+  children: ReactNode;
+  type: string;
+  size: Size;
+  onClick(): void;
+};
 
-export default function ButtonComponent({
+export default (({
   children, type, size, onClick,
-}: Props) {
+}: Props) => {
   const classes = useStyles();
 
   return (
@@ -29,4 +29,4 @@ export default function ButtonComponent({
       {children}
     </Button>
   );
-}
+}) as FC<Props>;

@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import Head from 'next/head';
 import LandingPage from 'src/componentes/pages/LandingPage';
 
 export default function Home() {
@@ -10,5 +10,5 @@ export default function Home() {
       </Head>
       <LandingPage />
     </div>
-  )
+  );
 }
