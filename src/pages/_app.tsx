@@ -1,4 +1,4 @@
-import { Layout } from 'src/componentes/common';
+import { Layout } from 'src/components/common';
 import type { AppProps } from 'next/app';
 
 function MyApp({ Component, pageProps }: AppProps) {

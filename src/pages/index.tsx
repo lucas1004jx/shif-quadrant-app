@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import LandingPage from 'src/componentes/pages/LandingPage';
+import LandingPage from 'src/components/pages/LandingPage';
 
 export default function Home() {
   return (
