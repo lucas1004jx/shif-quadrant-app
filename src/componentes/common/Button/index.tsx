@@ -1,4 +1,4 @@
-import { ReactNode, FC } from 'react';
+import { FC } from 'react';
 import clsx from 'clsx';
 import Button from '@material-ui/core/Button';
 import useStyles from './styles';
@@ -6,14 +6,14 @@ import useStyles from './styles';
 type Size = 'small' | 'medium' | 'large';
 
 type Props = {
-  children: ReactNode;
+  title: string;
   type: string;
   size: Size;
   onClick(): void;
 };
 
 export default (({
-  children, type, size, onClick,
+  title, type, size, onClick, ...rest
 }: Props) => {
   const classes = useStyles();
 
@@ -25,8 +25,9 @@ export default (({
       })}
       size={size}
       onClick={onClick}
+      {...rest}
     >
-      {children}
+      {title}
     </Button>
   );
 }) as FC<Props>;

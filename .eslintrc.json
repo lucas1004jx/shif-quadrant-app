@@ -1,10 +1,25 @@
 {
-  "extends": ["airbnb-typescript"],
+  "extends": [
+    "airbnb-typescript"
+  ],
   "parserOptions": {
     "project": "./tsconfig.json"
   },
   "rules": {
     "react/react-in-jsx-scope": "off",
-    "react/jsx-props-no-spreading": "off"
+    "react/jsx-props-no-spreading": "off",
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": [
+          ".storybook/**",
+          "src/stories/**"
+        ]
+      }
+    ],
+    "@typescript-eslint/indent": [
+      "error",
+      2
+    ]
   }
 }

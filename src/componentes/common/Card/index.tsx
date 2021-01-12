@@ -77,14 +77,12 @@ const Card: FC<Props> = ({
       }}
       >
         {primaryButton && (
-          <Button size="small" type="primary" onClick={primaryAction}>
-            {primaryButton}
-          </Button>
+          <Button size="small" type="primary" onClick={primaryAction} title={primaryButton} />
+
         )}
         {secondaryButton && (
-          <Button size="small" type="secondary" onClick={secondaryAction}>
-            {secondaryButton}
-          </Button>
+          <Button size="small" type="secondary" onClick={secondaryAction} title={secondaryButton} />
+
         )}
       </CardActions>
     </MaterialCard>
