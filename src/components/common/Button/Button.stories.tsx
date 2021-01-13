@@ -5,4 +5,4 @@ export default {
   component: Button,
 };
 
-export const Primary = () => <Button title="Primary button" type="primary" size="small" onClick={() => {}} />;
+export const Primary = () => <Button label="Primary button" type="primary" size="small" onClick={() => {}} />;

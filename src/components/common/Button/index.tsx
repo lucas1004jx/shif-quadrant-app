@@ -6,14 +6,14 @@ import useStyles from './styles';
 type Size = 'small' | 'medium' | 'large';
 
 type Props = {
-  title: string;
+  label: string;
   type: string;
   size: Size;
   onClick(): void;
 };
 
 export default (({
-  title, type, size, onClick, ...rest
+  label, type, size, onClick, ...rest
 }: Props) => {
   const classes = useStyles();
 
@@ -27,7 +27,7 @@ export default (({
       onClick={onClick}
       {...rest}
     >
-      {title}
+      {label}
     </Button>
   );
 }) as FC<Props>;
