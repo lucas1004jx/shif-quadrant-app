@@ -1,4 +1,4 @@
-import { Card } from 'src/components/common';
+import { Card } from '@common';
 import useStyles from './styles';
 
 const cardTitle = 'Mi Cuadrante';

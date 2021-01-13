@@ -2,7 +2,7 @@ import { FC, ReactNode } from 'react';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Container from '@material-ui/core/Container';
 import { ThemeProvider } from '@material-ui/core/styles';
-import theme from 'src/theme';
+import theme from '@theme';
 import useStyles from './styles';
 
 type Props = {
